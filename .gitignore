@@ -42,7 +42,48 @@ Insurance/start-all.bat
 .vscode/
 .idea/
 *.swp
+*.sw# ========== FRONTEND (React) ==========
+frontend/node_modules/
+frontend/build/
+frontend/.env*
+frontend/.pnp/
+frontend/.pnp.js
+frontend/coverage/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# ========== BACKEND (Django) ==========
+Insurance/__pycache__/
+Insurance/**/*.py[cod]
+Insurance/db.sqlite3
+Insurance/staticfiles/
+Insurance/media/
+Insurance/.env
+Insurance/.env.*
+
+# ========== PYTHON ENV ==========
+venv/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# ========== EDITOR / SYSTEM ==========
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
 *.swo
+
+# ========== GENERAL ==========
+*.bak
+*.tmp
+
+# ========== CUSTOM ==========
+start-all.bat
+
 .DS_Store
 Thumbs.db
 *.bak

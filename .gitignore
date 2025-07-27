@@ -14,13 +14,10 @@ frontend/yarn-error.log*
 # ==========================
 # BACKEND (Django in /Insurance)
 # ==========================
-Insurance/__pycache__/
+Insurance/**/__pycache__/
 Insurance/**/*.py[cod]
 Insurance/db.sqlite3
 Insurance/staticfiles/
-Insurance/media/
-
-# Secret keys & config
 Insurance/.env
 Insurance/.env.*
 
@@ -34,7 +31,13 @@ venv/
 *.log
 
 # ==========================
-# EDITOR / SYSTEM FILES
+# SCRIPTS
+# ==========================
+start-all.bat
+Insurance/start-all.bat
+
+# ==========================
+# SYSTEM / IDE FILES
 # ==========================
 .vscode/
 .idea/
@@ -42,16 +45,5 @@ venv/
 *.swo
 .DS_Store
 Thumbs.db
-
-# ==========================
-# GENERAL
-# ==========================
 *.bak
 *.tmp
-
-# ==========================
-# SCRIPTS
-# ==========================
-# Ignore script files that are not part of the project
-start-all.bat
-

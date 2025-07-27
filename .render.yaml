@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: insurance-app
+    env: python
+    buildCommand: |
+      npm install --prefix frontend
+      npm run build --prefix frontend
+      python manage.py collectstatic --noinput
+    startCommand: gunicorn Insurance.wsgi
+    envVars:
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: DJANGO_DEBUG
+        value: False

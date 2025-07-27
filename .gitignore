@@ -1,0 +1,50 @@
+# ==========================
+# FRONTEND (React in /frontend)
+# ==========================
+frontend/node_modules/
+frontend/build/
+frontend/.pnp/
+frontend/.pnp.js
+frontend/coverage/
+frontend/.env*
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# ==========================
+# BACKEND (Django in /Insurance)
+# ==========================
+Insurance/__pycache__/
+Insurance/**/*.py[cod]
+Insurance/db.sqlite3
+Insurance/staticfiles/
+Insurance/media/
+
+# Secret keys & config
+Insurance/.env
+Insurance/.env.*
+
+# ==========================
+# PYTHON / ENVIRONMENT
+# ==========================
+venv/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# ==========================
+# EDITOR / SYSTEM FILES
+# ==========================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ==========================
+# GENERAL
+# ==========================
+*.bak
+*.tmp
